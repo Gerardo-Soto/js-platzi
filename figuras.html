@@ -15,9 +15,10 @@
     <section class="main">
         <div class="figura">    
             <form action="">
-                <label>Escribe cuánto mide el lado del cuadrado:
-                    <input id="inputCuadrado" type="number" placeholder="Lado del cuadrado" />
+                <label for="datos del cuadrado">
+                    <p>Escribe cuánto mide el lado del cuadrado:</p>
                 </label>
+                <input id="inputCuadrado" type="number" placeholder="Lado del cuadrado" />
                 <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
                 <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
             </form>
@@ -25,11 +26,12 @@
 
         <div class="figura">
             <form action="">
-                <label for="inputLado"><p>Escribe cuánto mide los 3 lados del triangulo:</p>
+                <label for="datos del triángulo">
+                    <p>Escribe cuánto mide los 3 lados del triangulo:</p>
+                </label>
                     <input type="number" id="inputLado1" placeholder="Lado 1" />
                     <input type="number" id="inputLado2" placeholder="Lado 2"/>
                     <input type="number" id="inputLado3" placeholder="Lado 3"/>
-                </label>
                 <button type="button" onclick="perimetroTriangulo()">Calcular el perímetro</button>
                 <button type="button" onclick="areaTriangulo()">Calcular el área</button>
             </form>
@@ -37,10 +39,10 @@
 
         <div class="figura">
             <form action="">
-                <label for="inputCirculo">
+                <label for="datos del circulo">
                     <p>Escribe cuánto mide el radio del circulo:</p>
-                    <input type="number" id="inputRadio" placeholder="Radio del circulo">
                 </label>
+                    <input type="number" id="inputRadio" placeholder="Radio del circulo">
                 <button type="button" onclick="perimetroCirculo()">Calcular el perímetro</button>
                 <button type="button" onclick="areaCirculo()">Calcular el área</button>
 
@@ -50,11 +52,11 @@
         <div class="figura">
             <form action="">
                 <h3>Calcular la altura de un triángulo isósceles</h3>
-                <label for="inputLadoIsosceles">
+                <label for="datos del triángulo isósceles">
                     <p>Escribe los 2 valores del triángulo isósceles:</p>
-                    <input type="number" id="inputLadoIsosceles" placeholder="Lado A">
-                    <input type="number" id="inputBaseIsosceles" placeholder="Base">
                 </label>
+                <input type="number" id="inputLadoIsosceles" placeholder="Lado A">
+                <input type="number" id="inputBaseIsosceles" placeholder="Base">
                 <button type="button" onclick="alturaIsosceles()">Calcular la altura del triángulo</button>
             </form>
         </div>
