@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    background-image: radial-gradient(ellipse farthest-corner at 45px 45px , #00FFFF 0%, rgba(0, 0, 255, 0) 0%, #55AABB 110%);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.header {
+    height: 4 rem;
+    padding-left: 50px;
+    margin: 20px;
+}
+
+.header p {
+    padding-top: 10px;
+}
+
+.main {
+    height: 100%;
+}
+
+.main h2 {
+    margin: 2rem;
+}
+
+.main__form--label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;   
+}
+
+.main__form button {
+    max-width: 300px;
+    width: 300px;
+}
+
+.footer {
+    height: 3rem;
+    margin-top: auto;
+}
+
+.footer p {
+    padding-left: 50px;
+    padding-top: 10px;
+}

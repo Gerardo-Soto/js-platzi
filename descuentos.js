@@ -22,15 +22,16 @@ function onClickButtonCalcularPrecio() {
         const precioConDescuetoCupon = calculateOff(Number(precio.value), descuentoTotal);
         const resultado = document.getElementById("priceoff");
 
-        resultado.innerHTML = "El nuevo precio con cupón es de: $" + precioConDescuetoCupon;
+        resultado.innerHTML = "<h3>El nuevo precio con cupón es de: $" + precioConDescuetoCupon + "</h3>";
 
     }else if (coupon.value == '') {
         const precioConDescueto = calculateOff(Number(precio.value), Number(descuento.value));
         const resultado = document.getElementById("priceoff");
 
-        resultado.innerHTML = "El nuevo precio sin cupón es de: $" + precioConDescueto;
+        resultado.innerHTML = "<h3>El nuevo precio sin cupón es de: $" + precioConDescueto + "</h3>";
     }else{
-        alert("El cupón "+ coupon.value +" NO es valido");
+        const resultado = document.getElementById("priceoff");
+        resultado.innerHTML = "<h3>El cupón "+ coupon.value +" NO es valido</h3>";
     }
  
     

@@ -5,30 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentajes y Descuentos</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Porcentajes y Descuentos</h1>
         <p>Este es el 2do taller de JS.</p>
     </header>
 
-    <section>
+    <section class="main">
         <h2>Calcula el precio a pagar de tus productos con descuento.</h2>
-        <form action="">
-            <label for="inputPrice">Ingresa el precio de tu producto:</label>
-            <input type="number" id="inputPrice" placeholder="Precio $" />
-            <br>
-            <label for="inputDiscount">Ingresa el descuento de tu producto:</label>
-            <input type="number" id="inputDiscount" placeholder="Porcentaje %">
-            <br>
-            <label for="">Si tienes un cupón, seleccionalo:</label>
-            <input type="text" id="inputCoupon" placeholder="Código">
-            <br>
-            <button type="button" onclick="onClickButtonCalcularPrecio()">Calcular</button>
-            <br>
-            <p id="priceoff"></p>
+        <form action="" class="main__form">
+            <div class="main__form--label">
+                <label for="inputPrice">Ingresa el precio de tu producto: </label>
+                <input type="number" id="inputPrice" placeholder="Precio $" />
+            </div>
+            <div class="main__form--label">
+                <label for="inputDiscount">Ingresa el descuento de tu producto: </label>
+                <input type="number" id="inputDiscount" placeholder="Porcentaje %">
+            </div>
+            <div class="main__form--label">
+                <label for="">Si tienes un cupón, ingrésalo: </label>
+                <input type="text" id="inputCoupon" placeholder="Código">
+            </div>
+            <div class="main__form--label">
+                <button type="button" onclick="onClickButtonCalcularPrecio()">Calcular</button>
+            </div>
+            
+            <div class="main__form--label">
+                <p id="priceoff"></p>
+            </div>
+            
         </form>
     </section>
+
+    <footer class="footer">
+        <p>Autor: gerardo.8.soto@gmail.com</p>
+    </footer>
 
     <script src="./descuentos.js"></script>
 </body>
