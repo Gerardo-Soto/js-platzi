@@ -77,6 +77,10 @@ mexico.push({
     salary: 2000,
 });
 mexico.push({
-    name: "Bill Gates",
-    salary: 100000000,
+    name: "Gisselle 2da",
+    salary: 2400,
+});
+mexico.push({
+    name: "Gisselle 3ra",
+    salary: 4000,
 });
