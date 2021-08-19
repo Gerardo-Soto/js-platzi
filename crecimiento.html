@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Crecimiento Salarial</title>
+</head>
+<body>
+    <section class="header">
+        <h1>Incremento salarial en el área de tecnologíca</h1>
+    </section>
+    
+    <section class="main">
+        <h2>El crecimiento salarial en el área de tecnología está entre el 13% y 19% por año.</h2>
+        <h2>Esto es debido por la inyección de capital a la Tecnología en LATAM.</h2>
+
+        <section class="main__crecimiento-salarial">
+            <form action="">
+                <h3>Calcula tu crecimiento salarial</h3>
+                <label for="input__salario-anual">Ingresa tu salario anual actual:</label>
+                <input type="number" id="input__salario-anual" placeholder="ej: 100000">
+                <br>
+                <label for="input__years">Ingresa el numero de años a transcurrir:</label>
+                <input type="number" id="input__years" placeholder="ej: 3">
+                <br>
+                <button type="button" onclick="onclickCalcularCrecimientoSalarial()">Calcular</button>
+            </form>
+            <p id="salarialMinimo">Crecimiento salarial mínimo: </p>
+            <p id="salarialPromedio">Crecimiento salarial promedio: </p>
+            <p id="salarialMaximo">Crecimiento salarial máximo: </p>
+        </section>
+
+        <section class="main__salario-anual">
+            <form action="">
+                <h3>Calcula tu salario anual</h3>
+                <label for="input__salario-mensual">Ingresa tu salario mensual:</label>
+                <input type="number" id="input__salario-mensual" placeholder="ej: 10000">
+                <br>
+                <button type="button" onclick="onclickCalcularSalarioAnual()">Calcular</button>
+                <p id="returnSalarioAnual">Tu salario anual es de: </p>
+            </form>
+        </section>
+
+    </section>
+
+    <section class="plus">
+        <p>Desafio durante el proceso: convertir la salida de: [1220500.4999999999] a [1,220,500.49]</p>
+    </section>
+    <section class="footer">
+        <p>Autor: gerardo.8.soto@gmail.com</p>
+    </section>
+
+    <script src="js/calculoSalarial.js"></script>
+</body>
+</html>
